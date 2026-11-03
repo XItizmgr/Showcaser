@@ -27,7 +27,15 @@
     </style>
   </head>
   <body>
-    <main class="w-full bg-(--primary-color) h-full">
+   
+    <main class="w-full bg-(--primary-color) h-full relative ">
+       <section id="loader" class="fixed inset-0 width-full height-full bg-(--primary-color)">
+        <div class="w-full height-full flex justify-center items-center bg-(--secondary-color)">
+      <h2 class="font-[Inter] font-[5rem] font-normal text-(--primary-color)">
+        Heyy Xitiz here
+      </h2>
+      </div>
+    </section>
       <div class="grid grid-cols-8 grid-rows-13 gap-2 w-full min-h-full p-2">
         <div class="box col-span-1 row-span-1" style="--row: 1; --col: 3">
           <img
@@ -59,7 +67,7 @@
             alt="img"
           />
         </div>
-        <div class="box col-span-1 row-span-1" style="--row: 3; --col: 8">
+        <div class="box col-span-1 row-span-1" style="--row: 3; --col: 7">
           <img
             src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img6.jpg"
             alt="img"
@@ -107,7 +115,7 @@
             alt="img"
           />
         </div>
-        <div class="box col-span-1 row-span-1" style="--row: 7; --col: 8">
+        <div class="box col-span-1 row-span-1" style="--row: 7; --col: 5">
           <img
             src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img14.jpg"
             alt="img"
@@ -167,7 +175,7 @@
             alt="img"
           />
         </div>
-        <div class="box col-span-1 row-span-1" style="--row: 12; --col: 8">
+        <div class="box col-span-1 row-span-1" style="--row: 12; --col: 1">
           <img
             src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img24.jpg"
             alt="img"
@@ -216,6 +224,14 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
 
     <script>
+
+      function randomPlaceGenerator(){
+        return Math.floor(Math.random() * 8) + 1
+      }
+
+
+
+
       const lenis = new Lenis();
 
       function raf(time) {
@@ -230,6 +246,9 @@
       document.querySelectorAll(".box").forEach((el) => {
         const image = el.querySelector("img");
         const leftX = gsap.utils.random(-100, 100);
+
+        // let randomCol = randomPlaceGenerator()
+        // box.style.setProperty('--col', randomCol);
 
         const tl = gsap.timeline({
           scrollTrigger: {
