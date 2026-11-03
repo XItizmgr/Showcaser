@@ -18,7 +18,7 @@
 
       body {
         margin: 0;
-        background: var(--secondary-color);
+        background: var(--primary-color);
       }
 
       .loader-container {
@@ -29,6 +29,8 @@
         justify-content: center;
         align-items: center;
         pointer-events: none;
+        width: 100%;
+        height: 100%;
       }
 
       .loader {
@@ -38,7 +40,7 @@
         display: grid;
         place-items: center;
         background: var(--secondary-color);
-        border-radius: 20px;
+        border-radius: 30px;
         color: var(--primary-color);
       }
 
@@ -99,7 +101,7 @@
       </div>
     </section>
 
-    <main class="w-full bg-(--primary-color) h-full relative rounded-lg">
+    <main class="w-full bg-(--primary-color) h-full relative rounded-[30px]">
       <div class="grid grid-cols-8 grid-rows-13 gap-2 w-full min-h-full p-2">
         <div class="box col-span-1 row-span-1" style="--row: 1; --col: 3">
           <img
@@ -310,6 +312,7 @@
       const secondary = document.querySelector(".secondary-text");
 
       const main = document.querySelector("main");
+      
 
       gsap.set(main, {
         xPercent: 100,
@@ -332,41 +335,47 @@
         },
         onComplete: () => {
           const tl2 = gsap.timeline();
-          tl2.to(primary, {
-            y: -100,
-            duration:0.4,
-            ease: "power3.out"
-          },"start");
-          tl2.to(secondary,{
-            y:-110,
-            duration:0.4,
-            ease : "power3.out",
-            onComplete:()=>{
-              const tl = gsap.timeline()
-              tl.to(loader,{
-                scale:0.85,
-                ease:"none",
-                onComplete:()=>{
-                  gsap.to(loader,{
-                    xPercent:-100
-                  })
-                }
-              })
-              .to(
-                main,{
-                  xPercent:0,
-                  onComplete:()=>{
-                  gsap.to(loader,{
-                    scale:1
-                  })
-                }
+          tl2.to(
+            primary,
+            {
+              y: -100,
+              duration: 0.4,
+              ease: "power3.out",
+            },
+            "start",
+          );
+          tl2.to(
+            secondary,
+            {
+              y: -110,
+              duration: 0.4,
+              ease: "power3.out",
+              onComplete: () => {
+                const tl = gsap.timeline();
+                tl.to(loader, {
+                  scale: 0.85,
+                  ease: "none",
+                  duration:0.7,
+                  onComplete: () => {
+                    gsap.to(loader, {
+                      xPercent: -100,
+                      display: "none ",
+                    });
+                  },
+                }).to(main, {
+                  xPercent: 0,
+                  duration:1,
 
-                }
-              )
-
-            }
-
-          }, "start")
+                  onComplete: () => {
+                    gsap.to(main, {
+                      scale: 1,
+                    });
+                  },
+                });
+              },
+            },
+            "start",
+          );
         },
       });
 
