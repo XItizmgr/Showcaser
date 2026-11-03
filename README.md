@@ -2,7 +2,10 @@
 
 > Showcaser is an black and white themed image showcasing website with smooth scroll.
 
-https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731743/Screenshot_20261104_003316.png
+<img
+    src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731743/Screenshot_20261104_003316.png"
+    width="100%"
+  />
 
 ## Abour Showcaser.
 
@@ -19,7 +22,7 @@ ScrollTrigger with scrub to connect animations to the scroll position.
 - Custom Loader made with gsap 
 > Loader image
 
-https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731742/Screenshot_20261104_003339.png
+<img src = "https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731742/Screenshot_20261104_003339.png" width="100%/>
 
 - The Showcasing of image using lenis smooth scroll
 
