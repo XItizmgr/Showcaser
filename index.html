@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Showcaser</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-      :root {
-        --primary-color: #f5f5f0ec;
-        --secondary-color: #000000;
-      }
+        :root {
+          --primary-color: #111111;
+          --secondary-color:#f5f5f0 ;
+        }
+      
       .grid > div {
         grid-row: var(--row);
         grid-column: var(--col);
@@ -21,94 +27,200 @@
     </style>
   </head>
   <body>
-    <main class="w-full bg-(--primary-color) h-screen">
+    <main class="w-full bg-(--primary-color) h-full">
       <div class="grid grid-cols-8 grid-rows-13 gap-2 w-full min-h-full p-2">
-  <div class="box col-span-1 row-span-1" style="--row: 1; --col: 3">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634377/img1.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 1; --col: 7">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img2.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 2; --col: 2">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img3.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 2; --col: 6">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634396/img4.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 3; --col: 4">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634396/img5.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 3; --col: 8">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img6.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 4; --col: 1">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img7.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 4; --col: 5">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img8.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 5; --col: 2">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634448/img9.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 5; --col: 7">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img10.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 6; --col: 3">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img11.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 6; --col: 6">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img12.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 7; --col: 1">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img13.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 7; --col: 8">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img14.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 8; --col: 4">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img15.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 8; --col: 7">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img16.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 9; --col: 2">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img17.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 9; --col: 5">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img18.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 10; --col: 3">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img19.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 10; --col: 7">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img20.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 11; --col: 2">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img21.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 11; --col: 6">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img22.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 12; --col: 4">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img23.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 12; --col: 8">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img24.jpg" alt="img" />
-  </div>
-  <div class="box col-span-1 row-span-1" style="--row: 13; --col: 3">
-    <img src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img25.jpg" alt="img" />
-  </div>
-</div>
-    </main>
+        <div class="box col-span-1 row-span-1" style="--row: 1; --col: 3">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634377/img1.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 1; --col: 7">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img2.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 2; --col: 2">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img3.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 2; --col: 6">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634396/img4.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 3; --col: 4">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634396/img5.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 3; --col: 8">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634395/img6.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 4; --col: 1">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img7.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 4; --col: 5">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img8.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 5; --col: 2">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634448/img9.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 5; --col: 7">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img10.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 6; --col: 3">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634449/img11.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 6; --col: 6">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img12.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 7; --col: 1">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img13.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 7; --col: 8">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img14.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 8; --col: 4">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img15.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 8; --col: 7">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img16.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 9; --col: 2">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img17.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 9; --col: 5">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img18.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 10; --col: 3">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img19.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 10; --col: 7">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img20.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 11; --col: 2">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634427/img21.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 11; --col: 6">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img22.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 12; --col: 4">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img23.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 12; --col: 8">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634428/img24.jpg"
+            alt="img"
+          />
+        </div>
+        <div class="box col-span-1 row-span-1" style="--row: 13; --col: 3">
+          <img
+            src="https://res.cloudinary.com/y8sf5tb8/image/upload/v1793634426/img25.jpg"
+            alt="img"
+          />
+        </div>
+      </div>
+      <div
+        class="fixed top-0 left-0 flex flex-col justify-center items-center w-full h-full text-(--secondary-color)"
+      >
+        <h1
+          class="text-7xl md:text-9xl uppercase font-bold tracking-tight"
+          style="font-family: &quot;Bebas Neue&quot;, sans-serif"
+        >
+          Showcaser
+        </h1>
 
-    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js">
-      const lenis = new lenis()
+        <h2
+          class="text-xl md:text-3xl uppercase font-semibold tracking-[0.35em] mt-3"
+        >
+          Xitiz
+        </h2>
+      </div>
+      <section
+        class="w-full min-h-screen flex flex-col items-center justify-center px-8 md:px-20 text-center text-(--primary-color) bg-(--secondary-color)"
+      >
+        <p class="max-w-3xl text-2xl md:text-2xl leading-[2.2rem] font-normal text-left z-[999]">
+          Showcaser is an image-showcasing website featuring 25 different
+          monochrome images. This website was built to practice and explore
+          Lenis and GSAP in JavaScript. Lenis is a lightweight JavaScript
+          library for smooth scrolling, while GSAP is a powerful animation
+          library with plugins such as ScrollTrigger. This website uses
+          ScrollTrigger with scrub to connect animations to the scroll position.
+        </p>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+
+    <script>
+      const lenis = new Lenis();
 
       function raf(time) {
-          lenis.raf(time)
-          requestAnimationFrame(raf)
+        lenis.raf(time);
+        requestAnimationFrame(raf);
       }
-      requestAnimationFrame(raf)
+
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>
