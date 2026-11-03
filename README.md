@@ -22,7 +22,7 @@ ScrollTrigger with scrub to connect animations to the scroll position.
 - Custom Loader made with gsap 
 > Loader image
 
-<img src = "https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731742/Screenshot_20261104_003339.png" width="100%/>
+<img src = "https://res.cloudinary.com/y8sf5tb8/image/upload/v1793731742/Screenshot_20261104_003339.png" width="100%" />
 
 - The Showcasing of image using lenis smooth scroll
 
