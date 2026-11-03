@@ -40,7 +40,7 @@ there are two ways for a user to run this locally or Online
 
 ## Running online 
 
-Just click this link * for now link*
+Just click this link *https://showcaser2.vercel.app/*
 
 ## Running locally 
 
